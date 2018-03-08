@@ -1,0 +1,17 @@
+
+CREATE TABLE Data (
+  _id INTEGER AS Integer PRIMARY KEY AUTOINCREMENT,
+  type INTEGER AS Integer NOT NULL,
+  imei TEXT NOT NULL,
+  isread INTEGER AS Boolean DEFAULT 0 NOT NULL,
+  create_at INTEGER NOT NULL
+);
+
+delete_all:
+DELETE FROM Data WHERE 1;
+
+get_all:
+SELECT * FROM Data;
+
+update_isread:
+UPDATE Data SET isread=1 WHERE _id=?;

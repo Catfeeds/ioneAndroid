@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">点优</string>
+	<string name="title_activity_login">登录</string>
+	<string name="prompt_username">手机号码</string>
+	<string name="prompt_password">密码</string>
+	<string name="action_sign_in">登录或注册</string>
+	<string name="action_sign_in_short">登录</string>
+	<string name="error_invalid_username">此电子邮件用户名无效</string>
+	<string name="error_invalid_password">此密码是太短</string>
+	<string name="error_incorrect_password">此密码不正确</string>
+	<string name="error_field_required">此字段是必需的</string>
+	<string name="permission_rationale">"联系人权限需要提供电子邮件
+        完成"。</string>
+	<string name="hello_blank_fragment">你好空白片段</string>
+	<string name="exception_message_generic">有了应用程序错误</string>
+	<string name="exception_message_no_connection">没有互联网连接</string>
+	<string name="exception_message_user_not_found">无法检索用户数据。请检查您的互联网连接</string>
+	<string name="title_activity_conf">ConfActivity</string>
+	<string name="desc_no_history">没有历史轨迹</string>
+	<string name="desc_normal_mode">正常模式</string>
+	<string name="desc_less_electricity_mode">省电模式</string>
+	<string name="error_username_no_null">用户名不能为空</string>
+
+</resources>

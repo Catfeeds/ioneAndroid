@@ -1,0 +1,92 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    //Android
+    androidBuildToolsVersion = "24.0.2"
+    androidCompileSdkVersion = 24
+
+    androidMinSdkVersion = 19
+    androidTargetSdkVersion = 24
+//
+
+    //Libraries
+    daggerVersion = '2.8'
+    butterKnifeVersion = '8.2.1'
+    recyclerViewVersion = '21.0.3'
+    rxJavaVersion = '1.1.9'
+    rxAndroidVersion = '1.2.1'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    gsonVersion = '2.7'
+    okHttpVersion = '3.4.1'
+    androidAnnotationsVersion = '24.0.0'
+    frescoVersion='0.12.0'
+
+    retrofitVersion="2.1.0"
+    //Testing
+    robolectricVersion = '3.0'
+    jUnitVersion = '4.12'
+    assertJVersion = '1.7.1'
+    mockitoVersion = '2.2.9'
+    dexmakerVersion = '1.0'
+    espressoVersion = '2.0'
+    testingSupportLibVersion = '0.1'
+
+    //Development
+    leakCanaryVersion = '1.5'
+
+    presentationDependencies = [
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            butterKnife:        "com.jakewharton:butterknife:${butterKnifeVersion}",
+            butterKnifecompiler:        "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+
+            recyclerView:       "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+            rxJava:             "io.reactivex:rxjava:${rxJavaVersion}",
+            rxAndroid:          "io.reactivex:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            fresco:    "com.facebook.fresco:fresco:${frescoVersion}",
+            gson:    "com.google.code.gson:gson:${gsonVersion}",
+            okhttp:    "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+
+            leakcanary:"com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+            leakcanaryNoOp: "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
+    ]
+
+    presentationTestDependencies = [
+            mockito:            "org.mockito:mockito-core:${mockitoVersion}",
+            dexmaker:           "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+            dexmakerMockito:    "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+            espresso:           "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            testingSupportLib:  "com.android.support.test:testing-support-lib:${testingSupportLibVersion}",
+    ]
+
+    dataDependencies = [
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            okHttp:             "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            gson:               "com.google.code.gson:gson:${gsonVersion}",
+            rxJava:             "io.reactivex:rxjava:${rxJavaVersion}",
+            rxAndroid:          "io.reactivex:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+
+            retrofit2: "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofit2ConverterGson: "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofit2AdapterRxjava: "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
+    ]
+
+    dataTestDependencies = [
+            junit:              "junit:junit:${jUnitVersion}",
+            assertj:            "org.assertj:assertj-core:${assertJVersion}",
+            mockito:            "org.mockito:mockito-core:${mockitoVersion}",
+            robolectric:        "org.robolectric:robolectric:${robolectricVersion}",
+    ]
+
+
+}

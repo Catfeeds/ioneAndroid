@@ -1,0 +1,29 @@
+
+CREATE TABLE Talk (
+  _id INTEGER AS Integer PRIMARY KEY AUTOINCREMENT,
+  imei TEXT NOT NULL,
+  myimei TEXT NOT NULL,
+  name TEXT NOT NULL,
+  myname TEXT NOT NULL,
+  filepath TEXT NOT NULL,
+  create_at INTEGER NOT NULL,
+  success INTEGER AS Boolean DEFAULT 0 NOT NULL,
+  status INTEGER AS Boolean DEFAULT 0 NOT NULL,
+  duration INTEGER AS Integer NOT NULL
+);
+
+delete_all: 
+DELETE FROM Talk WHERE 1;
+
+get_all:
+SELECT * FROM Talk;
+
+get_the_mei:
+SELECT * FROM Talk WHERE imei=?;
+
+set_upload_error:
+UPDATE Talk SET success=0 WHERE _id=?;
+
+
+
+

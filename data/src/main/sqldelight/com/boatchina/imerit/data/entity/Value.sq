@@ -1,0 +1,28 @@
+
+CREATE TABLE Value (
+  _id INTEGER AS Integer PRIMARY KEY AUTOINCREMENT,
+  key_id INTEGER  NOT NULL,
+  key TEXT NOT NULL,
+  value TEXT NOT NULL
+);
+
+select_all:
+SELECT d.*,t.fine,t.status,t.power,t.user,t.voice,t.msg from Data d LEFT JOIN (
+SELECT v.key_id,
+MAX(CASE v.key WHEN 'fine' THEN value ELSE '' END) as fine,
+MAX(CASE v.key WHEN 'status' THEN value ELSE '' END) as status,
+MAX(CASE v.key WHEN 'power' THEN value ELSE '' END) as power,
+MAX(CASE v.key WHEN 'user' THEN value ELSE '' END) as user,
+MAX(CASE v.key WHEN 'voice' THEN value ELSE '' END) as voice,
+MAX(CASE v.key WHEN 'msg' THEN value ELSE '' END) as msg
+from Value v GROUP BY v.key_id) t ON t.key_id = d._id Order by d.create_at asc;
+
+
+delete_all:
+DELETE FROM Value WHERE 1;
+
+get_all:
+SELECT * FROM Value;
+
+--update_isread:
+--UPDATE Value SET isread=1 WHERE _id=?;

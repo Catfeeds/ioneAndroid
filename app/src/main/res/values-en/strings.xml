@@ -1,0 +1,95 @@
+<resources>
+	<string name="app_name">点优</string>
+	<string name="title_activity_login">Sign in</string>
+
+	<!-- Strings related to login -->
+	<string name="prompt_username">Phone Number</string>
+	<string name="prompt_password">Password</string>
+	<string name="action_sign_in">Sign in or register</string>
+	<string name="action_sign_in_short">Sign in</string>
+	<string name="error_invalid_username">This email username is invalid</string>
+	<string name="error_invalid_password">This password is too short</string>
+	<string name="error_incorrect_password">This password is incorrect</string>
+	<string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+	//Exception messages
+	<string name="exception_message_generic">There was an application error</string>
+	<string name="exception_message_no_connection">There is no internet connection</string>
+	<string name="exception_message_user_not_found">Cannot retrieve user data. Check your internet connection</string>
+	<string name="title_activity_conf">设置</string>
+
+
+	<string name="desc_no_history">没有历史轨迹</string>
+	<string name="title_select_mode">切换模式</string>
+	<string name="desc_normal_mode">正常模式</string>
+	<string name="desc_less_electricity_mode">省电模式</string>
+	<string name="error_username_no_null">用户名不能为空</string>
+	<string name="error_username_short">用户名太短</string>
+	<string name="error_password_no_null">密码不能为空</string>
+	<string name="error_password_long">password is too long</string>
+	<string name="error_username_long">username is too long</string>
+	<string name="error_password_short">password is too short</string>
+	<string name="error_password_defference">确认密码不一样</string>
+	<string name="success_login">登录成功</string>
+	<string name="desc_yes">确定</string>
+	<string name="title_aboutus">关于我们</string>
+	<string name="title_config">设置</string>
+	<string name="title_fence">电子围栏</string>
+	<string name="tip_add_fence">请添加围栏</string>
+	<string name="desc_edit_mode">编辑模式</string>
+	<string name="desc_commit">完成</string>
+	<string name="title_fence_list">围栏列表</string>
+	<string name="desc_add_fence">添加围栏</string>
+	<string name="title_history">历史轨迹</string>
+	<string name="title_device_info">设备信息</string>
+	<string name="desc_device_unbind">是否要解绑此设备</string>
+	<string name="desc_cancel">取消</string>
+	<string name="title_device_list">设备列表</string>
+	<string name="title_device_bind">绑定设备</string>
+	<string name="tip_input_imei">请输入设备号</string>
+	<string name="title_location">定位</string>
+	<string name="title_login">登录</string>
+	<string name="title_monitor">远程监听</string>
+	<string name="tip_wait_monitor">等待监听</string>
+	<string name="tip_input_number">请添加本机号码</string>
+	<string name="title_phone">智能电话</string>
+	<string name="desc_number">手机号码：</string>
+	<string name="desc_get_code">获取验证码</string>
+	<string name="desc_second">秒</string>
+	<string name="title_register">注册</string>
+	<string name="title_scan">扫描二维码</string>
+	<string name="tip_not_found_code">未发现二维码</string>
+	<string name="title_set_username">设置用户名</string>
+	<string name="desc_imei">设备号:</string>
+	<string name="tip_exit">再按一次退出应用</string>
+	<string name="desc_into_fence">进入围栏</string>
+	<string name="desc_outo_fence">离开围栏</string>
+	<string name="title_select_device">切换设备</string>
+	<string name="desc_login_first">请先登录</string>
+	<string name="desc_company_ownership">深圳市博奥特智能科技有限公司版权所有</string>
+	<string name="desc_fence_name">围栏名字</string>
+	<string name="desc_select_date">选择时间</string>
+	<string name="desc_unbind">解绑</string>
+	<string name="desc_device_name">设备名称</string>
+	<string name="desc_call">拨打</string>
+	<string name="desc_code">验证码</string>
+	<string name="desc_scan_from_photo">从相册选取扫描</string>
+	<string name="desc_set_nickname">设置名称</string>
+	<string name="desc_set_number">设置号码</string>
+	<string name="title_home">首页</string>
+	<string name="title_info">资讯</string>
+	<string name="title_find">发现</string>
+	<string name="title_mine">我的</string>
+	<string name="title_talkback">语音对讲</string>
+	<string name="desc_delete_all">全部删除</string>
+	<string name="title_activity_maps">Map</string>
+
+
+</resources>

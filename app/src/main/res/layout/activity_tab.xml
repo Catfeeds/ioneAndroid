@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <include layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:background="@color/colorBg"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <RadioGroup
+            android:paddingTop="3dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                style="@style/HomePageRadioButton"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector_tab_home"
+                android:textColor="@android:color/white"
+                android:text="@string/title_home" />
+
+            <RadioButton
+                android:id="@+id/rb_info"
+                style="@style/HomePageRadioButton"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector_tab_info"
+                android:textColor="@android:color/white"
+                android:text="@string/title_info" />
+
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/rb_find"
+                style="@style/HomePageRadioButton"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector_tab_find"
+                android:textColor="@android:color/white"
+                android:text="@string/title_find" />
+            <RadioButton
+                android:id="@+id/rb_mine"
+                style="@style/HomePageRadioButton"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector_tab_mine"
+                android:textColor="@android:color/white"
+                android:text="@string/title_mine" />
+        </RadioGroup>
+
+
+
+</LinearLayout>

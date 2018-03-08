@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.boatchina.imerit.app.view.fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner_main_alpha"
+        style="@style/BannerDefaultStyle"
+        app:banner_indicatorGravity="bottom|right"
+        app:banner_transitionEffect="alpha" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/iv_addimei"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_plus"/>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <LinearLayout
+                    android:id="@+id/ll_loc"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:src="@drawable/selector_location"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_location"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_phone"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_phone"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_phone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_talkback"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_talkback"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_talkback"/>
+                </LinearLayout>
+
+
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:id="@+id/ll_history"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:src="@drawable/selector_history"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_history"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_fence"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_fence"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_fence"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_monitor"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_monitor"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_monitor"/>
+                </LinearLayout>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

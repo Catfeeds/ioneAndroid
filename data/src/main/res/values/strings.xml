@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Data</string>
+    <string name="tip_network_break">网络中断，请检查您的网络状态</string>
+</resources>

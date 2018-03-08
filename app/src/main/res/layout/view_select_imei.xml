@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/colorBg"
+    android:id="@+id/ll_imei"
+    android:layout_height="40dp">
+<ImageView
+    android:id="@+id/iv_select_imei"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:padding="6dp"
+    android:src="@mipmap/ic_down"/>
+    <TextView
+        android:id="@+id/tv_imei_name"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        android:text="xxxxxxxxx"/>
+</LinearLayout>
